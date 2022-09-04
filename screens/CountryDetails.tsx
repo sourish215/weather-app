@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 import { API_KEY } from '../utils/APIKey';
 
-export default function CountryDetails({ route, navigation }) {
+export default function CountryDetails({ route, navigation }: { route: any, navigation: any }) {
   const { capital, population, lat, lng, flag } = route.params;
   const [weather, setWeather] = useState({});
   console.log(capital)

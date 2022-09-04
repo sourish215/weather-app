@@ -5,7 +5,7 @@ import WeatherDetails from '../screens/WeatherDetails';
 
 const Stack = createNativeStackNavigator();
 
-export default function DetailsStack({ route }) {
+export default function DetailsStack({ route }: { route: any }) {
   const params = route.params;
   return (
     <Stack.Navigator>

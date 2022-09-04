@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-export default function WeatherDetails({ route }) {
+export default function WeatherDetails({ route }: { route: any }) {
   const { icon, temp, precip, wind_speed } = route.params;
   return (
     <View style={styles.container}>

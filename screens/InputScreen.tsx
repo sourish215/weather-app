@@ -3,11 +3,11 @@ import { StyleSheet, TouchableWithoutFeedback, Keyboard, View, TextInput, SafeAr
 import { useState, useEffect } from 'react';
 
 
-export default function InputScreen({ navigation }) {
+export default function InputScreen({ navigation }: { navigation: any }) {
   const [country, setCountry] = useState("");
 
   const [info, setInfo] = useState({});
-  const changeHandler = (val) => {
+  const changeHandler = (val: string): void => {
     setCountry(val);
   };
 
